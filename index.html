@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DashFlow Dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="page-shell">
+            <header class="topbar">
+                <div class="brand-wrap">
+                    <div class="brand-mark">D</div>
+                    <div class="brand-copy">
+                        <span class="brand-name">DashFlow</span>
+                        <small>Operations Center</small>
+                    </div>
+                </div>
+
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a class="active" href="#">Overview</a>
+                    <a href="#">Analytics</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Reports</a>
+                </nav>
+
+                <div class="user-panel">
+                    <button class="ghost-btn">Export</button>
+                    <div class="user-chip">
+                        <span class="avatar">AR</span>
+                        <div>
+                            <strong>Ariana Ross</strong>
+                            <small>Admin</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="dashboard">
+                <section class="hero panel">
+                    <div>
+                        <p class="eyebrow">Performance overview</p>
+                        <h1>Good morning, Ariana.</h1>
+                    </div>
+                    <button class="primary-btn">Generate report</button>
+                </section>
+
+                <section class="stats-grid" aria-label="Key metrics">
+                    <article class="stat-card accent">
+                        <div class="card-top">
+                            <span class="label">Revenue</span>
+                            <span class="trend up">+12.4%</span>
+                        </div>
+                        <h2>$84,620</h2>
+                        <p>vs. last month</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="card-top">
+                            <span class="label">Active users</span>
+                            <span class="trend up">+8.1%</span>
+                        </div>
+                        <h2>24.8K</h2>
+                        <p>+1,480 this week</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="card-top">
+                            <span class="label">Conversion</span>
+                            <span class="trend down">-1.2%</span>
+                        </div>
+                        <h2>6.84%</h2>
+                        <p>Target 7.5%</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="card-top">
+                            <span class="label">Support tickets</span>
+                            <span class="trend up">+4.3%</span>
+                        </div>
+                        <h2>326</h2>
+                        <p>resolved today</p>
+                    </article>
+                </section>
+
+                <section class="content-grid">
+                    <article class="panel services-panel">
+                        <div class="section-head">
+                            <div>
+                                <p class="eyebrow">Service stack</p>
+                                <h3>Core services</h3>
+                            </div>
+                            <a href="#">View all</a>
+                        </div>
+
+                        <div class="service-list">
+                            <div class="service-item">
+                                <div class="service-icon blue">A</div>
+                                <div class="service-copy">
+                                    <strong>Analytics Cloud</strong>
+                                    <small>Monitoring & forecasting</small>
+                                </div>
+                                <span class="pill success">Healthy</span>
+                            </div>
+
+                            <div class="service-item">
+                                <div class="service-icon violet">S</div>
+                                <div class="service-copy">
+                                    <strong>Sales Pipeline</strong>
+                                    <small>CRM and outreach</small>
+                                </div>
+                                <span class="pill warning">Watch</span>
+                            </div>
+
+                            <div class="service-item">
+                                <div class="service-icon green">C</div>
+                                <div class="service-copy">
+                                    <strong>Customer Care</strong>
+                                    <small>Support automation</small>
+                                </div>
+                                <span class="pill success">Online</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="panel chart-panel">
+                        <div class="section-head">
+                            <div>
+                                <p class="eyebrow">Sales trend</p>
+                                <h3>Monthly revenue</h3>
+                            </div>
+                            <span class="chart-tag">Q3</span>
+                        </div>
+
+                        <div class="chart-bars" aria-label="Revenue chart">
+                            <div class="bar-group"><span class="bar" style="height: 40%"></span><label>Jan</label></div>
+                            <div class="bar-group"><span class="bar" style="height: 62%"></span><label>Feb</label></div>
+                            <div class="bar-group"><span class="bar" style="height: 58%"></span><label>Mar</label></div>
+                            <div class="bar-group"><span class="bar highlight" style="height: 82%"></span><label>Apr</label></div>
+                            <div class="bar-group"><span class="bar" style="height: 68%"></span><label>May</label></div>
+                            <div class="bar-group"><span class="bar" style="height: 90%"></span><label>Jun</label></div>
+                        </div>
+                    </article>
+
+                    <article class="panel tasks-panel">
+                        <div class="section-head">
+                            <div>
+                                <p class="eyebrow">Tasks</p>
+                                <h3>Team activity</h3>
+                            </div>
+                            <a href="#">Today</a>
+                        </div>
+
+                        <ul class="activity-list">
+                            <li>
+                                <span class="dot blue"></span>
+                                <div>
+                                    <strong>Marketing sync</strong>
+                                    <small>Completed 10 minutes ago</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="dot violet"></span>
+                                <div>
+                                    <strong>Campaign review</strong>
+                                    <small>Due in 2 hours</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="dot green"></span>
+                                <div>
+                                    <strong>Bug fix deploy</strong>
+                                    <small>Production release ready</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
